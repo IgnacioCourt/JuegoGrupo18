@@ -29,10 +29,11 @@ if jugar == "s":
     while np.sum(terreno)>0:
         bomba_fila=int(input("Si las filas van de arriba a abajo y comienzan desde la fila 0 y terminan en la 2. \n ¿En que fila crees que se encuentra alguna de las naves enemigas?\n"))
         bomba_col=int(input("Si las columnas van de izquierda a derecha y comienzan desde la columna 0 y terminan en la 2. \n ¿En que columna crees que se encuentra alguna de las naves enemigas?\n"))
-        if terreno[a][b]==terreno[bomba_fila][bomba_col] or terreno[c][d]==terreno[bomba_fila][bomba_col]:
+        print(bomba_fila,bomba_col)
+        if terreno[bomba_fila][bomba_col]==1:
             print("Felicitaciones, has destruido una nave enemiga")
             terreno[bomba_fila][bomba_col]=0
-        else:
+        elif terreno[bomba_fila][bomba_col]==0:
             print("Lo siento, has errado, intentalo denuevo")
     print("Lo has logrado, has destruido todas las naves enemigas")
 elif jugar=="n":
