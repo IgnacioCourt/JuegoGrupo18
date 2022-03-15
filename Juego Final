@@ -1,0 +1,11 @@
+
+        if terreno[bomba_fila][bomba_col]==1:
+            print("Felicitaciones, has destruido una nave enemiga")
+            terreno[bomba_fila][bomba_col]=0
+        elif terreno[bomba_fila][bomba_col]==0:
+            print("Lo siento, has errado, intentalo denuevo")
+    print("Lo has logrado, has destruido todas las naves enemigas")
+elif jugar=="n":
+    print("Será para la proxima")
+else:
+    print("Respuesta no válida")
