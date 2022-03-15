@@ -1,9 +1,9 @@
-#BattleShip
-#Grupo 18
+#BattleShip mini versión
+#Grupo 18  Lenguajes y paradigmas sec. 2
 #Integrantes:
 #-Ignacio Court
-#-Belen Alamo
-#-Fernanda Nicolas
+#-Belen Álamo
+#-Fernanda Nicolás
 
 import numpy as np
 from random import choice as choice
